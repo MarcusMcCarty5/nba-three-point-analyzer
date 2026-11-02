@@ -36,8 +36,7 @@ def main():
     "L" : "Losses"
     })
 
-    print(cleaned_df.columns)
-    print(cleaned_df.head())   
+    cleaned_df.to_csv("data/team_stats.csv", index=False)   
 
 if __name__ == "__main__":
     main()
