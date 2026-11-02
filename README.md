@@ -51,7 +51,7 @@ After completing the MVP, I may expand the project with the following features:
 ## Project Documentation
 
 - [Eisenhower Matrix](docs/eisenhower-matrix.pdf)
-- System Diagram: `docs/system-diagram.png`
+- [System Diagram] (docs/system-diagram.pdf)
 
 ## Project Milestones
 
