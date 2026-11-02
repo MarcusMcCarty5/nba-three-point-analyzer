@@ -10,7 +10,7 @@ The first version of this project will focus on collecting and analyzing NBA tea
 
 The MVP will include:
 
-- Collecting NBA team statistics through the NBA Stats API.
+- Collecting NBA team statistics through the NBA Stats CSV Files.
 - Retrieving three-point attempts, makes, percentages, and winning percentages.
 - Organizing and storing statistics in CSV files.
 - Cleaning and preparing data using Pandas.
@@ -37,13 +37,12 @@ After completing the MVP, I may expand the project with the following features:
 - Pandas – Organizing, cleaning, and analyzing NBA statistics.
 - NumPy – Performing mathematical calculations and statistical comparisons.
 - Matplotlib – Creating graphs and visualizations.
-- nba_api – Accessing NBA team statistics.
 
 **Data Storage:**
 - CSV files – Storing collected and cleaned NBA statistics.
 
 **External Data Source:**
-- NBA Stats API – Retrieving team statistics, including offensive and defensive three-point performance.
+- NBA Stats API – Retrieving team statistics, including offensive and defensive three-point performance. (Was not used for initial data collection)
 
 **Development Tools:**
 - Git and GitHub – Version control and project management.
@@ -56,7 +55,7 @@ After completing the MVP, I may expand the project with the following features:
 ## Project Milestones
 
 1. Set up GitHub repository and Python environment.
-2. Connect to the NBA Stats API and retrieve team data.
+2. Connect to the NBA Stats API and retrieve team data. (Was not used, CSV files instead)
 3. Organize and store NBA statistics.
 4. Clean and prepare collected data.
 5. Analyze offensive three-point performance.
