@@ -48,7 +48,7 @@ def main():
     plt.title("Offensive Three-Point Attempts vs. Team Wins")   
     plt.figtext(0.5, 0.01, f"Correlation: {offensive_3PA_correlation:.3f}", ha="center")
     plt.tight_layout(rect=[0, 0.04, 1, 1])
-    plt.savefig("docs/offensive_3PA_scatterplot.png")
+    plt.savefig("docs/offense/offensive_3PA_scatterplot.png")
     plt.show()
 
     offensive_3PM_correlation = cleaned_df["3PM"].corr(cleaned_df["Wins"])
@@ -61,7 +61,7 @@ def main():
     plt.title("Offensive Three-Pointers Made vs. Team Wins")
     plt.figtext(0.5, 0.01, f"Correlation: {offensive_3PM_correlation:.3f}", ha="center")
     plt.tight_layout(rect=[0, 0.04, 1, 1])
-    plt.savefig("docs/offensive_3PM_scatterplot.png")
+    plt.savefig("docs/offense/offensive_3PM_scatterplot.png")
     plt.show()
 
     cleaned_df["3P%O"] = cleaned_df["3PM"] / cleaned_df["3PA"]
@@ -75,7 +75,7 @@ def main():
     plt.title("Three-Point Percentage vs. Team Wins")
     plt.figtext(0.5, 0.01, f"Correlation: {offensive_3PP_correlation:.3f}", ha="center")
     plt.tight_layout(rect=[0, 0.04, 1, 1])
-    plt.savefig("docs/offensive_3P_pct_scatterplot.png")
+    plt.savefig("docs/offense/offensive_3P_pct_scatterplot.png")
     plt.show()
 
     defensive_3PA_correlation = cleaned_df["Opponent 3PA"].corr(cleaned_df["Wins"])
@@ -88,7 +88,7 @@ def main():
     plt.title("Opponent Three-Point Attempts vs. Team Wins")
     plt.figtext(0.5, 0.01, f"Correlation: {defensive_3PA_correlation:.3f}", ha="center")
     plt.tight_layout(rect=[0, 0.04, 1, 1])
-    plt.savefig("docs/defensive_3PA_scatterplot.png")
+    plt.savefig("docs/defense/defensive_3PA_scatterplot.png")
     plt.show()
 
     defensive_3PM_correlation = cleaned_df["Opponent 3PM"].corr(cleaned_df["Wins"])
@@ -101,7 +101,7 @@ def main():
     plt.title("Opponent Three-Pointers Made vs. Team Wins")
     plt.figtext(0.5, 0.01, f"Correlation: {defensive_3PM_correlation:.3f}", ha="center")
     plt.tight_layout(rect=[0, 0.04, 1, 1])
-    plt.savefig("docs/defensive_3PM_scatterplot.png")
+    plt.savefig("docs/defense/defensive_3PM_scatterplot.png")
     plt.show()
 
     cleaned_df["3P%D"] = cleaned_df["Opponent 3PM"] / cleaned_df["Opponent 3PA"]
@@ -115,7 +115,7 @@ def main():
     plt.title("Opponent Three-Point Percentage vs. Team Wins")
     plt.figtext(0.5, 0.01, f"Correlation: {defensive_3PP_correlation:.3f}", ha="center")
     plt.tight_layout(rect=[0, 0.04, 1, 1])
-    plt.savefig("docs/defensive_3P_pct_scatterplot.png")
+    plt.savefig("docs/defense/defensive_3P_pct_scatterplot.png")
     plt.show()
 
     cleaned_df["3PA Differential"] = cleaned_df["3PA"] - cleaned_df["Opponent 3PA"]
@@ -129,7 +129,7 @@ def main():
     plt.title("Net Three-Point Attempts vs. Team Wins")
     plt.figtext(0.5, 0.01, f"Correlation: {combined_3PA_correlation:.3f}", ha="center")
     plt.tight_layout(rect=[0, 0.04, 1, 1])
-    plt.savefig("docs/net_3PA_scatterplot.png")
+    plt.savefig("docs/net/net_3PA_scatterplot.png")
     plt.show()
 
     cleaned_df["3PM Differential"] = cleaned_df["3PM"] - cleaned_df["Opponent 3PM"]
@@ -143,7 +143,7 @@ def main():
     plt.title("Net Three-Pointers Made vs. Team Wins")
     plt.figtext(0.5, 0.01, f"Correlation: {combined_3PM_correlation:.3f}", ha="center")
     plt.tight_layout(rect=[0, 0.04, 1, 1])
-    plt.savefig("docs/net_3PM_scatterplot.png")
+    plt.savefig("docs/net/net_3PM_scatterplot.png")
     plt.show()
 
     cleaned_df["3P% Differential"] = cleaned_df["3P%O"] - cleaned_df["3P%D"]
@@ -157,7 +157,7 @@ def main():
     plt.title("Net Three-Point Percentage vs. Team Wins")
     plt.figtext(0.5, 0.01, f"Correlation: {combined_3PP_correlation:.3f}", ha="center")
     plt.tight_layout(rect=[0, 0.04, 1, 1])
-    plt.savefig("docs/net_3P_pct_scatterplot.png")
+    plt.savefig("docs/net/net_3P_pct_scatterplot.png")
     plt.show()
 
 
