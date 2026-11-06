@@ -36,7 +36,25 @@ def main():
     "L" : "Losses"
     })
 
-    cleaned_df.to_csv("data/team_stats.csv", index=False)   
+    cleaned_df.to_csv("data/team_stats.csv", index=False)
+
+    plt.scatter(cleaned_df["3PA"], cleaned_df["Wins"])
+    plt.axvline(cleaned_df["3PA"].mean())
+    plt.axhline(41)
+    plt.xlabel("3-Pointers Attempted Per Game")
+    plt.ylabel("Total Wins")
+    plt.title("Offensive Three-Point Attempts vs. Team Wins")
+    plt.show()   
+    plt.savefig("docs/offensive_scatterplot.png")
+
+    plt.scatter(cleaned_df["Opponent 3PA"], cleaned_df["Wins"])
+    plt.axvline(cleaned_df["Opponent 3PA"].mean())
+    plt.axhline(41)
+    plt.xlabel("Opponent 3-Pointers Attempted Per Game")
+    plt.ylabel("Total Wins")
+    plt.title("Opponent Three-Point Attempts vs. Team Wins")
+    plt.show()
+    plt.savefig("docs/defensive_scatterplot.png")
 
 if __name__ == "__main__":
     main()
