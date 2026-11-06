@@ -56,5 +56,16 @@ def main():
     plt.savefig("docs/defensive_scatterplot.png")
     plt.show()
 
+    cleaned_df["3PA Differential"] = cleaned_df["3PA"] - cleaned_df["Opponent 3PA"]
+    plt.scatter(cleaned_df["3PA Differential"], cleaned_df["Wins"])
+    plt.axvline(0)
+    plt.axhline(41)
+    plt.xlabel("Net 3-Pointers Attempted Per Game")
+    plt.ylabel("Total Wins")
+    plt.title("Net Three-Point Attempts vs. Team Wins")
+    plt.savefig("docs/combined_scatterplot.png")
+    plt.show()
+
+
 if __name__ == "__main__":
     main()
